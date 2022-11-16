@@ -27,7 +27,7 @@ Finally, it is known that COVID-19 affects taste perception. Indeed, a lot of pe
 
 #### Preliminary analysis
 - How to deal with seasonal oscillations of the data: comparing with same month in 2019 or using the library numpy-stl
-- Cross correlation
+- Auto regressive models
 
 #### Q1
 
