@@ -37,7 +37,17 @@ For the analysis regarding taste perception, we will consider the total weekly n
 
 ## Proposed timeline
 
+25/11: Create website and clear doubts about preprocessing
+09/12: Complete the bulk of our analyses: seasonality, correlations…
+16/12: Complete last analyses and write cohesive story
+24/12: Take care of remaining details
+
 ## Organization within the team
+
+Alexia: RQ1-healthy/unhealthy food
+Emma & Tobias: RQ2-world cuisines
+Desirée: RQ3-sensory dysfuction
+
 
 ## Questions for TAs
 
