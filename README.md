@@ -11,7 +11,7 @@ With the assumption that we can use Wikipedia pageviews to infer changes in food
 
 ## Proposed additional datasets
 
-- **Wikipedia pageviews**: We extended the dataset provided by the ADA course (ranging from 01/01/2018 - 31/07/2020) until 01/11/2022 in an effort to have more data during (and after) the COVID-19 pandemic. This will allow us to draw more meaningful conclusions and include the post-COVID period. To address our research questions we need to refine the categorization of this dataset and get the pageviews for the topics we are interested in.
+- **Wikipedia pageviews**: We extended the dataset provided by the ADA course (ranging from 01/01/2018 - 31/07/2020) until 01/11/2022 in an effort to have more data during (and after) the COVID-19 pandemic. This will allow us to draw more meaningful conclusions and include the post-COVID period. To address our research questions we refined the categorization of this dataset and get the corresponding pageviews.
 - **Google trends**: Using pytrends we download reports from Google Trends. We intend to use this data to confirm the validity of using Wikipedia pageviews to study dietary. The API allows us to get the historical Google Trend data for a list of up to five keywords over time or per region. To narrow down the result, we can specify categories for the keywords, select the geographic location, the Google property we are interested in (images, news etc.) and the needed form of the data (hourly, weekly, monthly).
 - **Daily covid cases**: It is a collection of the COVID-19 data maintained by Our World in Data [6](https://github.com/owid/covid-19-data/tree/master/public/data). It contains daily data regarding: vaccinations, tests & positivity, hospital & ICU, confirmed cases, confirmed deaths, reproduction rate, policy responses. For our analysis we will consider the daily new cases data, and we will compute their weekly average.
 
@@ -19,13 +19,13 @@ With the assumption that we can use Wikipedia pageviews to infer changes in food
 
 ### Dataset construction and preprocessing
 
-**Categories selection**: for our analysis on nutritional quality, we selected a list of categories associated to healthy food and another for categories of unhealthy food. To study the cultural dimension of food interests, we choose a list of categories of cuisine from different countries. Finally, to investigate the influence of the loss of senses on the interest in food, we researched in the literature the foods that were more difficult to taste for covid patients, and the ones that people would consume in an effort to recover the sense of taste.
+**Categories selection**: for our analysis on nutritional quality, we selected a list of categories associated with healthy and unhealthy food. To study the cultural dimension of food interests, we choose a list of categories of cuisine from different countries. Finally, to investigate sensory dysfunction, we researched in the literature the foods that were more difficult to taste for covid patients, and the ones that people would consume in an effort to recover the sense of taste.
 
 **Wikipedia query**: Through the wikipedia API we obtain the daily pageviews of the titles of interest, which we aggregate depending on the defined categories 
 
-**Weekly grouping**: To make our analysis less sensitive to single-day peaks, not necessarily correlated with the covid pandemic, we obtain the weekly average of the pageviews of the different categories and proceed by considering this data in our analyses. 
+**Weekly grouping**: To make our analysis less sensitive to single-day peaks, not necessarily correlated with the covid pandemic, we obtain the weekly average of the pageviews of the different categories. 
 
-**Outliers handling**: Even considering the weekly pageviews, sometimes there are huge spikes that reach up to 3 times the amount of pageviews of the previous and following week. We spot these outliers by setting a threshold based on the standard deviation of the time series, then replace them with the rolling mean.
+**Outliers handling**: We spot outliers by setting a threshold based on the standard deviation of the time series, then replace them with the rolling mean.
 
 **Filtering and standardization**: We will either decompose the time series into seasonal component, trend, and residual (for world cuisines, because we want to see how the Covid period disrupted the seasonality of 2020), or standardize them based on the corresponding month in 2019 (for healthy and unhealthy foods, because we want to highlight the difference compared to the pre-Covid period).
 
