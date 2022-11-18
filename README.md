@@ -55,4 +55,4 @@ Desirée: RQ3-sensory dysfuction
 
 ## Questions for TAs
 
-- How much can we get inspired by methods/plots from other papers like [1](https://www.nature.com/articles/s41467-022-28498-z)?
+- How much can we get inspired by methods/plots from other papers like [[1](https://www.nature.com/articles/s41467-022-28498-z)]?
