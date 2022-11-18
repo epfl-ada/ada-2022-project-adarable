@@ -22,6 +22,7 @@ With the assumption that we can use Wikipedia pageviews to infer changes in food
 **Categories selection**: for our analysis on nutritional quality, we selected a list of categories associated to healthy food and another for categories of unhealthy food. To study the cultural dimension of food interests, we choose a list of categories of cuisine from different countries. Finally, to investigate the influence of the loss of senses on the interest in food, we researched in the literature the foods that were more difficult to taste for covid patients, and the ones that people would consume in an effort to recover the sense of taste.
 
 **Wikipedia query**: Through the wikipedia API we obtain the daily pageviews of the titles of interest, which we aggregate depending on the defined categories 
+
 **Weekly grouping**: To make our analysis less sensitive to single-day peaks, not necessarily correlated with the covid pandemic, we obtain the weekly average of the pageviews of the different categories and proceed by considering this data in our analyses. 
 
 **Outliers handling**: Even considering the weekly pageviews, sometimes there are huge spikes that reach up to 3 times the amount of pageviews of the previous and following week. We spot these outliers by setting a threshold based on the standard deviation of the time series, then replace them with the rolling mean.
