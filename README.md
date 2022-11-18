@@ -1,5 +1,4 @@
-# Title
-subtitle
+# COVID-19 related changes in people's dietary habits
 
 ## Abstract
 
@@ -56,5 +55,4 @@ Desirée: RQ3-sensory dysfuction
 
 ## Questions for TAs
 
-- Could you recommend some preprocessing techniques for time series?
-- How much can we copy methods from other papers like the one of the lab? (Compute average relative change in interest, Spearman correlation coefficient between pageviews and mobility reduction…) And how much can we inspire ourselves from their plots?
+
