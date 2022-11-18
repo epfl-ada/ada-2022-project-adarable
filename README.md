@@ -27,7 +27,7 @@ With the assumption that we can use Wikipedia pageviews to infer changes in food
 
 ## Methods
 
-#### Dataset construction and preprocessing
+### Dataset construction and preprocessing
 
 **Categories selection**: for our analysis on nutritional quality, we selected a list of categories associated to healthy food and another for categories of unhealthy food. To study the cultural dimension of food interests, we choose a list of categories of cuisine from different countries. Finally, to investigate the influence of the loss of senses on the interest in food, we researched in the literature the foods that were more difficult to taste for covid patients, and the ones that people would consume in an effort to recover the sense of taste.
 
@@ -37,6 +37,8 @@ With the assumption that we can use Wikipedia pageviews to infer changes in food
 **Outliers handling**: Even considering the weekly pageviews, sometimes there are huge spikes that reach up to 3 times the amount of pageviews ofcompared to the previous and following week. We spot these outliers by setting a threshold based on the standard deviation of the time series, then replace them with the rolling mean.
 
 **Filtering and standardization**: We will either decompose the time series into seasonal component, trend, and residual (for world cuisines, because we want to see how the Covid period disrupted the seasonality of 2020), or standardize themthe time series based on the corresponding month in 2019 (for healthy and unhealthy foods, because we want to highlight the difference compared to the pre-Covid period).
+
+### Future analysis
 
 For the first part of our analysis, we will associate Wikipedia pageviews in each of the available languages to the mobility data in the countries in which the language is spoken. We will first use a t-test to compare the distributions of the pageviews ratios (healthy/unhealthy foods and local/foreign cuisines) in the pre-Covid period and during lockdown, using the interventions dataset to get information about lockdown dates in different countries. Then, to investigate the link between the interest shifts and the time spent at home, we will define the severity of the lockdown as the increase in the percentage of time spent at home at the peak of reduced mobility [7]. Finally, we will compute Pearson’s correlation coefficient between the severity of mobility restrictions and the pageviews ratio of interest.
 
