@@ -42,7 +42,7 @@ For the analysis regarding taste perception, we will consider the total weekly n
 
 16/12: Complete last analyses and write cohesive story
 
-24/12: Take care of remaining details
+23/12: Take care of remaining details
 
 ## Organization within the team
 
