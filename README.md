@@ -14,7 +14,7 @@ With the assumption that we can use Wikipedia pageviews to infer changes in food
 
 - **Wikipedia pageviews**: We extended the dataset provided by the ADA course (ranging from 01/01/2018 - 31/07/2020) until 01/11/2022 in an effort to have more data during (and after) the COVID-19 pandemic. This will allow us to draw more meaningful conclusions and include the post-COVID period. To address our research questions we refined the categorization of this dataset and get the corresponding pageviews.
 - **Google Trends**: Using pytrends we download reports from Google Trends. We use this data to study the interest for different companies of food deliveries in several countries. The API allows us to get the historical Google Trend data for a list of up to five keywords over time or per region. To narrow down the result, we can specify categories for the keywords, select the geographic location, the Google property we are interested in (images, news etc.) and the needed range of time (01/01/2018 - 01/11/2022). 
--**Google Mobility data**: We extended the dataset provided by the ADA course (ranging from 01/01/2018 - 31/07/2020) until 01/11/2022. For our research questions we will use the categories named: ‘residential_percent_change_from_baseline
+- **Google Mobility data**: We extended the dataset provided by the ADA course (ranging from 01/01/2018 - 31/07/2020) until 01/11/2022. For our research questions we will use the categories named: ‘residential_percent_change_from_baseline
 ’, ‘retail_and_recreation_percent_change_from_baseline’.
 
 
